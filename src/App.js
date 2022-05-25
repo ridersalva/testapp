@@ -6,10 +6,12 @@ import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
+    <>
+    <Sidebar />
     <div className="App">
-      <Sidebar/>
      <AppRoutes/> 
     </div>
+    </>
   );
 }
 
