@@ -1,4 +1,9 @@
-.Table th{
+
+.Table th {
     text-align: center;
     padding: 3px 0 3px 0;
+}
+
+.Table td {
+    text-align: center;
 }

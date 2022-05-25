@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import db from '../data/db.json';
 import '../css/Table.css';
-
+import Table from 'react-bootstrap/Table'
 import { Container, Row, Col } from 'react-bootstrap'
 
 function Table_Design() {
@@ -11,34 +11,34 @@ function Table_Design() {
             <Row>
                 <Col sm={4}></Col>
                 <Col sm={8} className='Table'>
-                    <table>
-
+                    <Table responsive="sm">
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Courses</th>
                                 <th>wales</th>
                                 <th>Last Upload</th>
-                                <th>By</th>
+                                <th className= "d-inline-block align-top">By</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {dbs.designs.map((designs) => (
+                            {dbs.designs.slice(0, 5).map((designs) => (
                                 <tr>
                                     <td>{designs.name}</td>
-                                    <hr />
+
                                     <td>{designs.courses}</td>
-                                    <hr />
+
                                     <td>{designs.wales}</td>
-                                    <hr />
-                                    <td>{designs.id}</td>
-                                    <hr />
-                                    <td>{designs.updated}</td>
-                                    <hr />
+
+                                    <td>{designs.updated.slice(0, 10)}</td>
+                                    
+                                    <td className= "d-inline-block align-top"
+                                        style={{ borderRadius: "50%", marginRight: "25px", color: "rgba(126, 195, 184)" }}>{designs.id}</td>
+
                                 </tr>
                             ))}
                         </tbody>
-                    </table>
+                    </Table>
                 </Col>
             </Row>
         </>
