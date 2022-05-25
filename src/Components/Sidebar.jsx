@@ -10,11 +10,11 @@ import '../css/sidebar.css';
         <div className='sidebar-sticky'></div>
        <Col>
         <Nav.Item>
-            <Nav.Link href="#">Design</Nav.Link>
+            <Nav.Link href="Design">Design</Nav.Link>
         </Nav.Item>
        
         <Nav.Item>
-            <Nav.Link href="#">Setouts</Nav.Link>
+            <Nav.Link href="Setout">Setouts</Nav.Link>
         </Nav.Item>
         </Col>
     </Nav>

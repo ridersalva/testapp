@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import db from './data/db.json';
+import db from '../data/db.json';
 
 import { Container, Row, Col } from 'react-bootstrap'
 
